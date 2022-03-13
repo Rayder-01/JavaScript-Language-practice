@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<!--=========  請將JavaScript主程式放置在下方指定區塊   ============ -->
+<!--=========  執行python主程式開啟網頁，在網頁中查看JavaScript執行結果 ===================== -->
+<script>
+    function createParagraph() {
+        var para = document.createElement('p');
+        para.textContent = '執行成功!';
+        document.body.appendChild(para);
+        var para2 = document.createElement('p');
+        para2.textContent = '請使用網頁 "檢查" 功能查看 "console" 所執行出的結果。';
+        document.body.appendChild(para2);
+//=================  (開始)  JavaScript 主程式放置區   =======================//
+
+
+
+
+        console.log("Hello world!");
+
+//=================  (結束)  JavaScript 主程式放置區   =======================//
+}
+
+</script>
+<h1>JavaScript 執行結果預覽網頁</h1>
+
+<p></p>
+
+
+<button onclick="createParagraph()">開始執行</button>
+
+</body>
+</html>
